@@ -1,0 +1,384 @@
+Лексема – это наименьшая неделимая часть языка, которую распознает компилятор. Из лексем составляются все языковые конструкции.
+
+Идентификаторы - это имена, которыми обозначаются различные объекты программы, определяемые программистом (переменные, функции, классы и тд.) Идентификатор обязан быть уникальным. Может состоять из букв латинского алфавита, цифр, символа подчеркивания. Идентификатор не может начинаться с цифры!
+
+Ключевые слова (keywords) - зарезервированные, служебные слова, которые нельзя использовать в своих целях (например, идентификатор не может быть ключевым словом).
+
+abstract,
+auto,
+bool,
+break,
+case,
+catch,
+char,
+class,
+const,
+continue,
+decltype,
+default,
+delete,
+do,
+double,
+dynamic_cast,
+else,
+enum,
+explicit,
+export,
+extern,
+false,
+final,
+float,
+for,
+friend,
+goto,
+if,
+inline,
+int,
+long,
+mutable,
+namespace,
+new,
+nullptr,
+private
+protected
+public
+return
+short
+signed
+sizeof
+static
+struct
+switch
+template
+this
+throw
+true
+try
+typedef
+typeid
+typename
+union
+unsigned
+using
+virtual
+void
+volatile
+while
+
+понятие оператора
+Оператор - конструкция языка программирования, которая выполняет определенное действие над аргументами (операндами). 
+Операнд - это аргумент оператора, то есть то значение, над которым оператор выполняет действие.
+
+по количеству операндов делят на:
+- Унарные - требуют 1 операнда:
+- Бинарные - требуют 2 операнда
+- Тернарные - 3 операнда
+
+таблица приоритетов:
+
+Выражение – это корректная комбинация операндов и операторов, которая всегда имеет определённое результирующее значение (результат).
+Это значение характеризуется типом данных.
+В качестве операндов могут выступать переменные, константы, литералы, результаты работы функций. 
+ 
+    пример выражения:
+    5 + х
+Переменная – это именованная область в оперативной памяти, которая может хранить и изменять своё значение на протяжении работы программы.
+ 
+
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.img_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  background: linear-gradient(135deg, #0f1b13, #154e33, #0f1b13);
+}
+#background_lines1 {
+  width: 50%;
+  border: 1px solid red;
+}
+#background_lines2 {
+  width: 50%;
+  border: 1px solid red;
+}
+.content_wrapper {
+  width: 1440px;
+  height: 1152px;
+  margin: auto;
+  margin-top: 187px;
+  background: rgba(12, 26, 17, 0.7);
+  backdrop-filter: blur(200px);
+  border: 1px solid red;
+  position: absolute;
+  z-index: 100;
+  overflow: hidden;
+}
+#elipse_bottom {
+  position: absolute;
+  /* width: 40%;
+  height: 50%;
+  left: 25%;
+  top: 80%; */
+  width: 576px;
+  height: 576px;
+  left: 512px;
+  top: 923px;
+  background: rgba(6, 196, 120, 0.08);
+  /* radial-gradient(rgba(6, 196, 120, 0.15), rgb(12, 26, 17, 0.6)); */
+  border-radius: 288px;
+  box-shadow: 10px 10px 100px 100px rgba(6, 196, 120, 0.08);
+}
+
+#elipse_top_left {
+  position: absolute;
+  width: 362px;
+  height: 362px;
+  left: -86px;
+  top: -97px;
+  background: rgba(21, 217, 137, 0.09);
+  box-shadow: 10px 10px 100px 100px rgba(21, 217, 137, 0.09);
+  border-radius: 181px;
+}
+/* Ellipse top_right
+
+position: absolute;
+width: 734px;
+height: 734px;
+left: 1007px;
+top: -184px;
+
+background: #109F64;
+
+
+*/
+#elipse_top_right {
+  position: absolute;
+  width: 734px;
+  height: 734px;
+  left: 1007px;
+  top: -184px;
+
+  background: rgba(16, 159, 100, 0.09);
+  box-shadow: 10px 10px 100px 100px rgba(16, 159, 100, 0.08);
+  border-radius: 367px;
+}
+
+/* Ellipse bottom
+
+position: absolute;
+width: 576px;
+height: 576px;
+left: 512px;
+top: 923px;
+
+background: #06C476;
+*/
+
+header {
+  height: 80px;
+  border: 1px solid red;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: absolute;
+  width: 517px;
+  height: 477px;
+
+  border: 1px solid red;
+  font-family: sans-serif;
+}
+main {
+  position: absolute;
+  width: 517px;
+  height: 477px;
+  left: 80px;
+  top: calc(50% - 477px / 2 + 16.5px);
+  border: 1px solid rgb(200, 63, 170);
+  padding: 0px;
+  gap: 40px;
+  left: 80px;
+}
+main p {
+  width: 517px;
+  height: 48px;
+  font-family: "General Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #c1ccc7;
+}
+#main_label,
+.accent {
+  width: 517px;
+  height: 231px;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.accent {
+  color: #02c173;
+}
+
+#btn-round {
+  border: 1px solid red;
+  width: 138px;
+  height: 138px;
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 10px;
+  background: url("./img/arrow-right.png") center center no-repeat;
+}
+.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: anim 10s linear infinite; /**/
+  border: 1px solid rgb(10, 170, 23);
+}
+
+/* @keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+.text span {
+  position: absolute;
+  font-size: 0.9em;
+  transform-origin: 0 75px;
+}
+
+/**/
+#accsent1 {
+  transform: rotate(0deg);
+  color: #02c173;
+  border: 1px solid rgb(123, 192, 4);
+}
+#no_accsent1 {
+  transform: rotate(91.3deg);
+  color: white;
+}
+#accent2 {
+  color: #02c173;
+  transform: rotate(174.3deg); /**/
+}
+#no_accsent2 {
+  transform: rotate(266deg);
+  color: white;
+}
+/* color:#02c173; */
+/* Text 
+
+position: absolute;
+left: 46.85px;
+right: 91.15px;
+top: 3.74px;
+bottom: 112.74px;
+
+ btn/round 16 medium 
+font-family: "IBM Plex Mono";
+font-style: normal;
+font-weight: 500;
+font-size: 16.0031px;
+line-height: 135%;
+ identical to box height, or 22px 
+display: flex;
+align-items: flex-end;
+text-align: center;
+text-transform: uppercase;
+
+color: #02c173;
+
+transform: matrix(0.93, -0.37, 0.28, 0.96, 0, 0);*/
+
+
+
+/********************************************************************************************************************************/
+
+    /*1.С клавиатуры вводится целое число.Вывести на экран все числа, на которые введённое число делится без остатка.Например, для 60 такими числами станут 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.
+    */
+    /*int number;
+    cout << "Enter a number: ";
+    cin >> number;
+    for (int i = 1; i <= number / 2; i++)
+    {
+	if (number % i == 0)
+	    cout << i << ", ";
+    }
+    cout << number << endl;*/
+
+/*2.Написать игру «Угадай число».Пользователь мысленно загадывает число от 0 до 1000, компьютер отгадывает его за минимальное количество попыток.
+*/
+  /*  int min = 0, max = 100;
+    char answer = 0;
+    string trash_str;
+    cout << "Think the number from " << min << " to " << max << endl;
+    while (true)
+    {
+	system("cls");
+	cout << "Is your number bigger than " << min + ((max - min) / 2) << "? 1 - yes, 2 - no: ";
+	answer = getchar();
+	cin.get();
+	switch (answer)
+	{
+	case '1':
+	    min = min + ((max - min) / 2)+1;
+	    break;
+	case '2':
+	    max = min + ((max - min) / 2);
+	    break;
+	default:
+	    cout << "You entered strange symbol.\nPress any key to continue....";
+	    getchar();
+	    break;
+	}
+	if (min == max)
+	{
+	    cout << "Your number is " << min;	
+	    break;
+	}	    
+    } */
+
+/* 3.Ежемесячная стипендия студента составляет N гривен, а расходы на проживание превышают стипендию и составляют M гривен в месяц.Рост цен ежемесячно увеличивает расходы на 3 % .Составьте программу расчёта суммы денег, которую необходимо единовременно попросить у родителей, чтобы можно было прожить учебный год(10 месяцев), используя только эти деньги и стипендию.
+*/
+
+//4.Написать программу, которая генерирует календарь на любой год, указанный с клавиатуры.
+//
+//5.Скоро Новый год!Необходимо срочно нарисовать ёлочку.С клавиатуры вводится количество ярусов, и высота каждого яруса ёлочки. (рисунок есть в презентации)
+//
+//6.Королю нужно убить дракона, но средства его казны – ограничены.Нужно создать программу, которая поможет рассчитать минимальное количество копейщиков, которое необходимо, чтобы убить дракона.Данные очков здоровья и атаки дракона и одного копейщика вводятся с клавиатуры.Защиту, удачу, мораль, меткость и т.п.не учитывать.Копейщики наносят удар первыми(общий нанесённый урон – это сумма атак всех живых копейщиков).Если атака дракона превышает значение очков здоровья копейщика(например, у копейщика хп 10, а атака дракона - 15), то копейщик погибает, а оставшийся урон действует на оставшихся в живых копейщиков.Например, жизнь дракона 500, атака 55, жизнь одного копейщика 10, атака 10, а количество копейщиков – 20 http://heroes.thelazy.net/wiki/List_of_creatures  Лог боя для данного примера должен выглядеть так:
+//?Копейщики атакуют(урон 200) – у дракона осталось 300 очков здоровья.
+//?Дракон атакует(урон 55) – осталось 15 копейщиков, один из которых ранен(осталось 5 очков здоровья).
+//?Копейщики атакуют(урон 150) – у дракона осталось 150 очков здоровья.
+//?Дракон атакует(урон 55) – осталось 9 копейщиков.
+//?Копейщики атакуют(урон 90) – у дракона осталось 60 очков здоровья.
+//?Дракон атакует(урон 55) – осталось 4 копейщика, один из которых ранен(осталось 5 жизней).
+//?Копейщики атакуют(урон 40) – у дракона осталось 20 очков здоровья.
+//?Дракон атакует  и побеждает.
+
